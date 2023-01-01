@@ -1,0 +1,84 @@
+body {
+    background-image: url("./images/bodabackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigation-bar {
+    display: flex;
+    background-color: black;
+    border-radius: 25px;
+}
+.header {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-left: 6%;
+}
+.my-nav {
+    margin-top: 5%;
+    margin-left: 35%;
+}
+button {
+    height: 60px;
+    width: 100px;
+    font-size: large;
+    font-weight: bold;
+    background-color: aqua;
+    border: hidden;
+    border-radius: 25px;
+}
+button:hover {
+    background-color: rgb(33, 177, 53);
+    color: white;
+}
+.submit-btn {
+    background-color: black;
+    color: white;
+    margin-left: 20%;
+}
+.submit-btn:hover {
+    background-color: darkgreen;
+    color: black;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 3%;
+}
+h3 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+form {
+    margin-left: 30%;
+    font-style: italic;
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+.my-input {
+    width: 650px;
+    height: 30px;
+    font-size: 15px;
+    border: double;
+    border-radius: 25px;
+}
+#landing-page {
+    background-color: aqua;
+    border-radius: 35px;
+}
+#my-footer {
+    background-color: crimson;
+    border-radius: 30px;
+    height: 250px;
+}
+a {
+    padding-left: 10%;
+}
+footer {
+    margin-left: 13%;
+    /* padding-top: 2%; */
+}

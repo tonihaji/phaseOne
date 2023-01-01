@@ -1,109 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>bodabodaweb</title>
-  <link rel="stylesheet" href="./styles.css">
-  
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-  <div class="main">
-    <div class="navbar">
-      <div class="icon">
-        <h2 class="logo">Bodabodsacco</h2>
-      </div>
-
-      <div id="menu1"class="menu">
-        
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services<a>
-          <a href="#">Register</a>
-          
-        
-      </div>
-
-      <!-- <div class="search">
-        <input class="srch" type="search" name="" placeholder="Type To text">
-        <a href="#"> <button class="btn">Search</button></a>
-      </div> -->
-
-    </div>
-    <div class="content">
-       <div class="form">
-        <h2>Register here</h2>
-        <label  class="form-label">Name:</label>
-        <input id="myname" name="names" placeholder="Enter name Here">
-        <br>
-        <br>
-        <label  class="form-label">passport/Id:</label>
-        <input type="number" name="passport/Id" placeholder="Enter passport/Id Here">
-        <br>
-        <br>
-        <label  class="form-label">Ntsa.no:</label>
-        <input type="number" ntsaNo="number" placeholder="Enter NTSA number here">
-        <br>
-        <br>
-        <label  class="form-label">Email:</label>
-        <input type="email" id="email" placeholder="Enter Email Here">
-        <br>
-        <br>
-        <label  class="form-label">Password:</label>
-        <input type="password" id="pwd" placeholder="Enter Password Here">
-        <br><br>
-     
-
-      <button id="cn"><a href="#">SUBMIT </a></button>
-      <div class="form">
-        <!-- <h2>Login Here</h2>
-
-        <input type="email" name="email" placeholder="Enter Email Here">
-        <br><br>
-        <input type="password" name="" placeholder="Enter Password Here">
-        <br>
-        <button id="loginBtn" class="btn">Login</button> -->
-<div id="userInfo">
-<!-- <P id="userName"></P>
-<P id="ntsa"></P>
-<P id="email"></P> -->
-
-</div>
-
-        <p class="link">Don't have an account<br>
-          <a href="#">Sign up </a> here</a>
-        </p>
-        <p class="liw">Log in with</p>
-
-        <div class="icons">
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-google"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-skype"></ion-icon>
-          </a>
+    <div class="navigation-bar">
+        <div class="header">
+            <h1> Bodaboda app </h1>
         </div>
-
-      </div>
+        <div class="my-nav">
+            <nav>
+                <button> Home </button>
+                <button> About </button>
+                <button>Access</button>
+                <button> Contact </button>
+            </nav>
+        </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <script src="index.js"></script>
-  
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
+    <div id="landing-page">
+        <h2>Register your information in the form below</h2>
+        <form action="submit" id="form-data">
+            <label id="name" for="name">Name :</label><br>
+            <input class="my-input" id="name-input" type="text" placeholder="Enter your name"><br><br>
+            <label id="Email" for="email"> Email :</label><br>
+            <input class="my-input" id="email-input" type="text" placeholder="Enter your email"><br><br>
+            <label id="passport" for="ntsa"> Passport :</label><br>
+            <input class="my-input" id="passport-input" type="text" placeholder="Enter your Passport"><br><br>
+            <label id="ntsa" for="ntsa"> Passport :</label><br>
+            <input class="my-input" id="ntsa-input" type="text" placeholder="Enter your Ntsa"><br><br><br>
 
-</html> 
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div><br><br>
+    <div id="my-footer">
+        <h3>Follow us these social media platforms</h3>
+        <footer>
+            <a href="#"> <img src="./images/facebook-logo.jpeg" alt="" height="120px"></a>
+            <a href="#"> <img src="./images/instagram-logo.jpeg" alt="" height="120px"></a>
+            <a href="#"> <img src="./images/skype-logo.jpeg" alt="" height="120px"></a>
+            <a href="#"><img src="./images/twitter-logo.jpeg" alt="" height="120px">
+            </a>
+        </footer>
+    </div> <br><br>
+    <script src="./index.js"></script>
+
+</body>
+</html>

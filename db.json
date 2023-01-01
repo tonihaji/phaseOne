@@ -1,15 +1,11 @@
 {
-"userInfo":[
-{
-    "id": 1,
-    "name": "mike",
-    "passport/id": "44",
-    "numb": "55",
-    "email":"mike@.yahoo",
-    "password":"pwd"
-
-  }
-  
-
-]
+  "userInfo": [
+    {
+      "id": 1,
+      "name": "mike",
+      "email": "mike@.yahoo",
+      "passport": "4444",
+      "ntsa_no": "5555"
+    }
+  ]
 }

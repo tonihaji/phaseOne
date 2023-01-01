@@ -1,35 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
+const formData = document.querySelector ('#form-data')
+formData.addEventListener ('submit', (e)=> {
+    e.preventDefault ()
 
-    getInfo();
-});
-function getInfo(){
- fetch('http://localhost:3000/userInfo')
-.then(res => res.json())
-.then(renderInfo)
-    
-} 
+    const inputName = document.querySelector ('#name-input').value
+    const inputEmail = document.querySelector ('#email-input').value
+    const inputPassport = document.querySelector ('#passport-input').value
+    const inputNtsa = document.querySelector ('#ntsa-input').value
 
-function renderInfo(data) {
-    const userInfo=document.getElementById("userInfo")
-    for (let i = 0; i < data.length; i++) {
-        const info=data[i]
-        const unga=document.createElement("li")
-    unga.innerHTML=`>>fetched-info display
-    <p id="jiji">Name:${info.name}</p>
-    <P>passport/id: ${info.numb}</p>
-    <P>Ntsa.no: ${info.numb}</P>
-    <P>Email: ${info.email}</p>
-    <P>Password:${info.password}
-    `
-   userInfo.appendChild(unga)
-   const btn=document.getElementById("cn")
-   btn.addEventListener("click",()=>{
-    const idName=document.getElementById("myname").value
-    const newG=document.createElement("p")
-    newG.innerHTML=idName
-    userInfo.append(newG)
-    
-   })
-   
-    
-} }
+    fetch ('http://localhost:3000/userInfo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify ({
+            name: inputName,
+            email: inputEmail,
+            passport: inputPassport,
+            ntsa_no: inputNtsa
+        })
+    })
+    .then ((response)=> response.json())
+    .then ((data)=> console.log (data))
+})
