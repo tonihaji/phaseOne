@@ -5,7 +5,7 @@ body {
 }
 .navigation-bar {
     display: flex;
-    background-color: black;
+    background-color: aqua;
     border-radius: 25px;
 }
 .header {
@@ -23,9 +23,10 @@ button {
     width: 100px;
     font-size: large;
     font-weight: bold;
-    background-color: aqua;
+    /* background-color: ; */
     border: hidden;
     border-radius: 25px;
+    margin-right: 40px;
 }
 button:hover {
     background-color: rgb(33, 177, 53);
@@ -42,9 +43,10 @@ button:hover {
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    /* text-align: ; */
     font-size: 55px;
     padding-top: 3%;
+    margin-left: 750px
 }
 h3 {
     text-align: center;
@@ -71,7 +73,7 @@ form {
     border-radius: 35px;
 }
 #my-footer {
-    background-color: crimson;
+    background-color: aqua;
     border-radius: 30px;
     height: 250px;
 }

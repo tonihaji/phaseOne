@@ -15,8 +15,9 @@ formData.addEventListener ('submit', (e)=> {
         body: JSON.stringify ({
             name: inputName,
             email: inputEmail,
-            passport: inputPassport,
-            ntsa_no: inputNtsa
+            ntsa_no: inputNtsa,
+            passport: inputPassport
+            
         })
     })
     .then ((response)=> response.json())
